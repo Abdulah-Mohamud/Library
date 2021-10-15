@@ -14,7 +14,7 @@ public abstract class LibraryItem {
         }
 
     //////////////////////////////Methods//////////////////////////////////////////
-    public String getTitle(String name){
+    public String getTitle(){
        // System.out.println("The title is "+title +" ");
         return title;
     }

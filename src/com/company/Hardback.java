@@ -21,10 +21,6 @@ public class Hardback extends Books {
 
     }
 
-   //public Hardback(String title, String colour, int loanDuration, int numberOfStock){
-     //   this("batman","Black",2 ,13 );
-    //}
-
     //////////////////////////////Methods//////////////////////////////////////////
     public void name(String title){
         System.out.println();
