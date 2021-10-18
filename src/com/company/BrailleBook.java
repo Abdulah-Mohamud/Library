@@ -1,24 +1,30 @@
 package com.company;
 
-public class Hardback extends Books {
+public class BrailleBook extends Books {
     //////////////////////////////Attribute//////////////////////////////////////////
 
     private String colour;
     private int loanDuration;
     private int numberOfStock;
 
-    public Hardback(String title){
+    public BrailleBook(String title){
         super(title);
     }
 
     //////////////////////////////Constructors//////////////////////////////////////
-    public Hardback(String title,String colour,int loanDuration, int numberOfStock){
+    public BrailleBook(String title, String colour, int loanDuration, int numberOfStock){
         super(title);
         this.colour=colour;
         this.loanDuration=loanDuration;
         this.numberOfStock=numberOfStock;
 
 
+    }
+
+    public static String getTitle(String batman) {
+        System.out.println("Here is " + "Title");
+
+        return batman;
     }
 
     //////////////////////////////Methods//////////////////////////////////////////

@@ -2,13 +2,14 @@ package com.company;
 
 public class Books extends LibraryItem{
     //////////////////////////////Attribute//////////////////////////////////////////
-    private int length;
+    private int averageRead;
     private String title;
 
 
     //////////////////////////////Constructors///////////////////////////////////////
     public Books(String title) {
         super (title);
+        this.title = title;
     }
 
     //////////////////////////////Method////////////////////////////////////////////
@@ -18,7 +19,8 @@ public class Books extends LibraryItem{
         return new Books(title);
     }
 
-    public void length(int length){
-        System.out.println("The average read of this book is" + "length");
+    public void getaverageRead(int averageRead){
+        System.out.println("The average read of this book is" + "averageRead");
     }
+
 }

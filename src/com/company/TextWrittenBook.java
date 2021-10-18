@@ -1,30 +1,37 @@
 package com.company;
 
-public class Paperback extends Books {
-    //////////////////////////////Attribute//////////////////////////////////////////
+public class TextWrittenBook extends Books {
 
+    //////////////////////////////Attribute//////////////////////////////////////////
+    private String genre;
     private String colour;
     private int loanDuration;
     private int numberOfStock;
 
-    public Paperback(String title){
+    public TextWrittenBook(String title){
         super(title);
     }
 
     //////////////////////////////Constructors//////////////////////////////////////
-    public Paperback(String title,String colour,int loanDuration, int numberOfStock){
+    public TextWrittenBook(String title,String genre, String colour, int loanDuration, int numberOfStock){
         super(title);
+        this.genre=genre;
         this.colour=colour;
         this.loanDuration=loanDuration;
         this.numberOfStock=numberOfStock;
 
+    }
 
+    public String getTitle() {
+        System.out.println("Here is " + "Title");
+        return null;
     }
 
     //////////////////////////////Methods//////////////////////////////////////////
     public void name(String title){
         System.out.println();
     }
+
 
     public int getLoanDuration() {
         return loanDuration;

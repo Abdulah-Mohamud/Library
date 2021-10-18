@@ -3,19 +3,20 @@ package com.company;
 public abstract class LibraryItem {
 
     //////////////////////////////Attribute//////////////////////////////////////////
-    private String title;
+    private static String title;
     private int length;
     private String genre;
 
 
     //////////////////////////////Constructors///////////////////////////////////////
-        public LibraryItem(String title){
+    public LibraryItem(String title){
             this.title = title;
         }
 
+
     //////////////////////////////Methods//////////////////////////////////////////
     public String getTitle(){
-       // System.out.println("The title is "+title +" ");
+        System.out.println("The title is "+title +" ");
         return title;
     }
 
